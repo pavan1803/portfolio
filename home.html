@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            
+            
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(45deg,black,red);
+            z-index: 2;
+            
+        }
+        video{
+            display: block;
+            height: 100vh;
+            width: 100%;
+            margin-top: 2%;
+            border-radius: 10px;
+            z-index: 1;
+            object-fit: cover;
+        }
+          ul{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 100;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            color: red;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:2rem;
+           
+        }
+        nav{
+            position: absolute;
+            top: 4%;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+        }
+        .detail{
+            position: absolute;
+            top: 30%;
+            left: 3%;
+            color: white;
+            z-index: 2;
+        }
+        input[type="radio"]{
+            width: 40px;
+            height: 40px;
+            font-size: 2rem;
+            /* background-color: rgba(51,51,51,0.6); */
+            border: none;
+            border-radius: 50%;
+            margin-left: 10px;
+            color: white;
+            margin-bottom: 30%;
+        }
+        .play button{
+            background-color: red;
+            color: white;
+            font-size: 1rem;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            width: 100px;
+            height: 40px;
+            border: 2px black solid;
+        }
+             button:hover{
+            transform: scale(1.3);
+            transition: all 600ms ease-in-out;
+        }
+        
+
+           
+          
+        
+        .play #list{
+            background-color: rgba(51,51,51,0.6);
+            margin-left: 20px;
+            color: white;
+            border: 2px white solid;
+        }
+        .play #radio{
+            padding-bottom: 60px;
+            font-size: 2rem;
+        }
+        .box-main{
+            
+            
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(45deg,black,red);
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background-color: gray;
+            display: inline-block;
+            margin: 20px;
+            border-radius: 10px;
+            vertical-align: top;
+            
+       }
+            .box img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            } 
+
+        .align1{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+        .align2{
+            display: flex;
+            justify-content: center;
+        }
+        .box:hover{
+            transform: scale(1.3);
+            transition: all 800ms ease-in-out;
+        }
+            h3{
+                color: white;
+                text-align: center;
+                padding-top: 50px;
+                font-size: 3rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                   }
+          
+
+
+</style>
+</head>
+<body>
+    
+    <div class="main">
+        <video autoplay muted loop src="./imgs/VID20250809132930.mp4" type="video/mp4"></video>
+         <nav>
+        <ul>
+            <li><h1>CosmicFlix</h1></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">New & Popular</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+    </nav>
+    <div class="detail">
+        <h1>C <p>SERIES</p></h1>
+        <h1>2025 RECAP</h1>
+        <p>⭐⭐⭐⭐⭐ Small Group,Big Memories!</p>
+        <p>Dear World! I am grateful to be alive in you,<br>
+        and I am thankful for another year of better times <br>
+    and even better Memories with the ones I Love❤️❤️</p>
+    <div class="play">
+    <button type="button" id="play">Play</button>
+    <button type="button" id="list">➕My List</button>
+    <input type="radio" name="" id="" placeholder="👍">
+    <input type="radio" name="" id="radio" placeholder="👎">
+    </div>
+    </div>
+    </div>
+    
+    <div class="box-main">
+        <br>
+        <h1 align="left" style="color: white; font-family:'Times New Roman', Times, serif;">Popular On Demand</h1>
+        <div class="align1">
+        <div class="box">
+           <img src="./imgs/IMG-20210101-WA0007.jpg" alt="">
+        </div>
+        <div class="box">
+           <img src="./imgs/IMG-20210316-WA0040.jpg" alt="">
+        </div>
+        <div class="box">
+           <img src="./imgs/IMG20250208084017.jpg" alt="">
+        </div>
+        <div class="box"><img src="./imgs/IMG-20210916-WA0030.jpg" alt=""></div>
+        <div class="box"><img src="./imgs/IMG-20210719-WA0011.jpg" alt=""></div>
+        </div>
+        <div class="align2">
+        <div class="box"><img src="./imgs/IMG20250809125731.jpg" alt="">
+        </div>
+        <div class="box"><h3>Pyspiders</h3></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>

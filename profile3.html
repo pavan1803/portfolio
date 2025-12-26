@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .main{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(60deg,rgb(2, 56, 4),rgb(82, 80, 82));
+       }
+       img{
+        height: 80vh;
+        animation: run 4s infinite  normal;
+        display: flex;
+        position: relative;
+        padding-top: 5%;
+       }
+       .box{
+        width: 600px;
+        height: 300px;
+        /* background-image: linear-gradient(25deg,rgb(49, 158, 13) , rgb(4, 45, 10)); */
+        position: absolute;
+        top: 27%;
+        right: 13%;
+        border: 0;
+        outline: 0;
+        background: transparent;
+       }
+       .box:hover{
+        transform: scale(1.6);
+        transition: all 800ms ease-in-out;
+       }
+       @keyframes run{
+        from{
+            left: -20%;
+
+        }
+        to{
+            left:5%;
+            transform: scale(1.2);
+            transition: all 200ms ease-in-out;
+
+        }
+       }
+       h1{
+        color: white;
+       }
+       p{
+        color: white;
+        text-align: center;
+        font-size: medium;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       
+        
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="poster">
+            <img src="./imgs/Doctor-Doom-Download-PNG-Image.png" alt="" >
+        </div>
+        
+        <div class="box">
+            <h1>Dr.Doom</h1>
+            <br>
+        <p>Victor Von Doom is the very embodiment of dread and domination — a cold, armored tyrant whose iron mask hides the scars of ambition and obsession. As monarch of Latveria, his genius transcends mere science, blending sorcery and machinery into a terrifying arsenal that bends reality and crushes all who oppose him. Doom doesn’t just seek power — he *claims it*, convinced that only his ruthless vision can reshape humanity’s fate. His voice is thunderous with absolute certainty, his silence colder than steel, and in his gaze lies the promise of conquest or annihilation — whichever serves his inscrutable will.
+
+
+</p>
+        </div>
+    </div>
+</body>
+</html>

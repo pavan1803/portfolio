@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .main{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(60deg,rgb(7, 10, 63),rgb(230, 197, 9));
+       }
+       img{
+        height: 80vh;
+        animation: run 4s infinite  normal;
+        display: flex;
+        position: relative;
+        padding-top: 5%;
+        box-shadow: 2px black inset;
+       }
+       .box{
+        width: 600px;
+        height: 300px;
+        /* background-image: linear-gradient(25deg,rgb(49, 158, 13) , rgb(4, 45, 10)); */
+        position: absolute;
+        top: 27%;
+        right: 13%;
+        border: 0;
+        outline: 0;
+        background: transparent;
+       }
+       .box:hover{
+        transform: scale(1.6);
+        transition: all 800ms ease-in-out;
+       }
+       @keyframes run{
+        from{
+            left: -20%;
+
+        }
+        to{
+            left:5%;
+            transform: scale(1.2);
+            transition: all 200ms ease-in-out;
+
+        }
+       }
+       h1{
+        color: white;
+       }
+       p{
+        color: white;
+        text-align: center;
+        font-size: medium;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      
+
+       }
+       
+        
+        </style>
+</head>
+<body>
+    <div class="main">
+        <div class="poster">
+            <img src="./imgs/Thanos-PNG-Photo.png" alt="" >
+        </div>
+        
+        <div class="box">
+            <h1>Thanos</h1>
+            <br>
+        <p>Thanos is a cosmic supervillain from Marvel Comics, often called The Mad Titan — one of the most powerful and feared beings in the universe. Born on Titan as an Eternal–Deviant hybrid, he possesses superhuman strength, durability, cosmic energy manipulation, genius-level intellect and near-invulnerability. Driven by a warped belief in “balance,” Thanos seeks the six Infinity Stones to wield ultimate power and reshape reality itself, famously wiping out half of all life in the universe to impress and court the living embodiment of Death. Merciless yet strategic, his genocidal crusades put him at odds with nearly every hero in existence.
+
+
+</p>
+        </div>
+    </div>
+</body>
+</html>
